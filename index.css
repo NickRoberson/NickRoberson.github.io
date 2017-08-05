@@ -7,3 +7,51 @@ canvas {
   left: 0;
   z-index: -9999;
 }
+
+.title {
+  font-size: 44pt;
+}
+
+.header {
+    margin: 0cm 2cm 0cm 2cm;
+    padding: 1cm 1cm 1cm 1cm;
+}
+
+.custom-panel {
+  padding: 1cm 1cm 1cm 1cm;
+  margin: .5cm 2cm .5cm 2cm;
+}
+
+.content {
+  width: auto;
+  background: white;
+  border: 0px solid white;
+  border-radius: 1cm;
+}
+
+.panel-header {
+  margin-bottom: 1cm;
+}
+
+.work-title {
+  position: relative;
+  left: 0px;
+}
+
+.work-date {
+  position: absolute;
+  right: 0px;
+}
+
+.work {
+  display: inline;
+}
+
+.content-item {
+  margin: 1cm;
+}
+
+.glyphicon {
+  margin-left: 15px;
+  position: absolute;
+}

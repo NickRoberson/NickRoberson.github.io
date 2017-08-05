@@ -6,7 +6,7 @@ MyColor myColor = new MyColor();
 
 void setup()
 {
-  frameRate(80);
+  frameRate(30);
   size(1200, 800, P2D);
   for (int i = 0; i < NB_PARTICLES; i++)
   {
