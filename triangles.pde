@@ -1,4 +1,4 @@
-final int NB_PARTICLES = 200;
+final int NB_PARTICLES = 300;
 ArrayList<Triangle> triangles;
 Particle[] parts = new Particle[NB_PARTICLES];
 PImage image;
@@ -97,9 +97,9 @@ class MyColor
   
   public void init()
   {
-    R = random(255);
-    G = random(255);
-    B = random(255);
+    R = random(205);
+    G = random(205);
+    B = random(205);
     Rspeed = (random(1) > .5 ? 1 : -1) * random(minSpeed, maxSpeed);
     Gspeed = (random(1) > .5 ? 1 : -1) * random(minSpeed, maxSpeed);
     Bspeed = (random(1) > .5 ? 1 : -1) * random(minSpeed, maxSpeed);

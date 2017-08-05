@@ -8,25 +8,33 @@ canvas {
   z-index: -9999;
 }
 
+body {
+  font-family: Courier New !important;
+}
+
 .title {
   font-size: 44pt;
 }
 
 .header {
-    margin: 0cm 2cm 0cm 2cm;
-    padding: 1cm 1cm 1cm 1cm;
+    width: 100%;
+    height: auto;
+    bottom: 0px;
+    top: 0px;
+    left: 0;
+    text-align: center;
 }
 
 .custom-panel {
-  padding: 1cm 1cm 1cm 1cm;
-  margin: .5cm 2cm .5cm 2cm;
+  padding: .5cm .5cm .5cm .5cm;
+  margin: 1cm 3cm 1cm 3cm;
 }
 
 .content {
   width: auto;
   background: white;
   border: 0px solid white;
-  border-radius: 1cm;
+  border-radius: .5cm;
 }
 
 .panel-header {
@@ -54,4 +62,12 @@ canvas {
 .glyphicon {
   margin-left: 15px;
   position: absolute;
+}
+
+.disable-button {
+  position: absolute;
+  margin-top:.5cm;
+  margin-right:.5cm;
+  top: 0px;
+  right: 0px;
 }

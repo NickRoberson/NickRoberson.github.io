@@ -19,17 +19,23 @@
     <div class="header">
       <h1 class="title">Nicholas A. Roberson</h1>
       <p class="lead">Grinnell College Computer Science 2018</p>
+      <!-- links to scroll to items -->
+      <a id="aboutLink">About</a> | 
+      <a id="experienceLink">Experience</a> | 
+      <a id="skillsLink">Skills</a> | 
+      <a id="interestsLink">Interests</a> | 
+      <a id="contactLink">Contact</a>
     </div>
 
     <!-- content -->
-    <div class="content custom-panel">
+    <div id="about" class="content custom-panel">
       <h1 class="display-3">About Me</h1>
       <div class="content-item">
         Something.
       </div>
     </div>
 
-    <div class="content custom-panel">
+    <div id="experience" class="content custom-panel">
       <h1 class="panel-header">Experience</h1>
       
       <!-- Work 1 -->
@@ -79,12 +85,12 @@
 
     </div>
 
-    <div class="content custom-panel">
+    <div id="skills" class="content custom-panel">
       <h1 class="display-3">Skills</h1>
       <p class="lead"> Lorem Ipsum</p>
     </div>
 
-    <div class="content custom-panel">
+    <div id="interests" class="content custom-panel">
       <h1 class="display-3">Interests</h1>
 
       <!-- item 1 -->
@@ -133,12 +139,23 @@
       <div class="content-item">
         <h4>Music</h4>
       </div>
-
     </div>
-    <!-- background amination -->      
-    <canvas id="bg-canvas" class="canvas-bg" data-processing-sources="triangles.pde">   
-    </canvas> 
+
+    <div id="contact" class="content custom-panel">
+      <h1 class="display-3">Contact</h1>
+      <p class="lead"> Lorem Ipsum</p>
+    </div>
+
+    <!-- background amination -->    
+    <div id="background">  
+      <canvas id="bg-canvas" class="canvas-bg" data-processing-sources="triangles.pde">   
+      </canvas> 
+    </div>
+
+    <a id="disable" class="disable-button"> Disable Animation
+    </a>
 
     <script type="text/javascript" src="processing.js"></script>
+    <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
