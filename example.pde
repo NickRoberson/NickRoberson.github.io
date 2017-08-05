@@ -1,176 +1,184 @@
-   226   5    
-OpenProcessing
-My Sketches
-My Feed
+final int NB_PARTICLES = 200;
+ArrayList<Triangle> triangles;
+Particle[] parts = new Particle[NB_PARTICLES];
+PImage image;
+MyColor myColor = new MyColor();
 
-Edit Profile
-
-Get Plus+ Membership
-
-Sign out
-
-Classes
-All Classes
-
-
-Search
-/ Recent s / Browse All physics game visualization particles color evolution circle lines
- Follow OpenProcessing on Twitter openprocessing  Email info@openprocessing.org Credits Terms of Service Privacy Policy 
-   
-
-
-
-sketch147268 
-
-83
+void setup()
 {
-84
+  size(600, 450, P2D);
+  for (int i = 0; i < NB_PARTICLES; i++)
+  {
+    parts[i] = new Particle();
+  }
+}
+
+void draw()
+{
+  myColor.update();
+  noStroke();
+  fill(120, 1);
+  background(50);
+  triangles = new ArrayList<Triangle>();
+  Particle p1, p2;
+
+  for (int i = 0; i < NB_PARTICLES; i++)
+  {
+    parts[i].move();
+  }
+
+  for (int i = 0; i < NB_PARTICLES; i++)
+  {
+    p1 = parts[i];
+    p1.neighboors = new ArrayList<Particle>();
+    p1.neighboors.add(p1);
+    for (int j = i+1; j < NB_PARTICLES; j++)
+    {
+      p2 = parts[j];
+      float d = PVector.dist(p1.pos, p2.pos); 
+      if (d > 0 && d < Particle.DIST_MAX)
+      {
+        p1.neighboors.add(p2);
+      }
+    }
+    if(p1.neighboors.size() > 1)
+    {
+      addTriangles(p1.neighboors);
+    }
+  }
+  drawTriangles();
+}
+
+void drawTriangles()
+{
+  noStroke();
+  fill(myColor.R, myColor.G, myColor.B, 13);
+  stroke(max(myColor.R-15, 0), max(myColor.G-15, 0), max(myColor.B-15, 0), 13);
+  //noFill();
+  beginShape(TRIANGLES);
+  for (int i = 0; i < triangles.size(); i ++)
+  {
+    Triangle t = triangles.get(i);
+    t.display();
+  }
+  endShape();  
+}
+
+void addTriangles(ArrayList<Particle> p_neighboors)
+{
+  int s = p_neighboors.size();
+  if (s > 2)
+  {
+    for (int i = 1; i < s-1; i ++)
+    { 
+      for (int j = i+1; j < s; j ++)
+      { 
+         triangles.add(new Triangle(p_neighboors.get(0).pos, p_neighboors.get(i).pos, p_neighboors.get(j).pos));
+      }
+    }
+  }
+}
+
+void mousePressed()
+{
    myColor.init(); 
-85
 }
-86
-​
-87
+
 class MyColor
-88
 {
-89
   float R, G, B, Rspeed, Gspeed, Bspeed;
-90
   final static float minSpeed = .7;
-91
   final static float maxSpeed = 1.5;
-92
   MyColor()
-93
   {
-94
     init();
-95
   }
-96
   
-97
   public void init()
-98
   {
-99
     R = random(255);
-100
     G = random(255);
-101
     B = random(255);
-102
     Rspeed = (random(1) > .5 ? 1 : -1) * random(minSpeed, maxSpeed);
-103
     Gspeed = (random(1) > .5 ? 1 : -1) * random(minSpeed, maxSpeed);
-104
     Bspeed = (random(1) > .5 ? 1 : -1) * random(minSpeed, maxSpeed);
-105
   }
-106
   
-107
   public void update()
-108
   {
-109
     Rspeed = ((R += Rspeed) > 255 || (R < 0)) ? -Rspeed : Rspeed;
-110
     Gspeed = ((G += Gspeed) > 255 || (G < 0)) ? -Gspeed : Gspeed;
-111
     Bspeed = ((B += Bspeed) > 255 || (B < 0)) ? -Bspeed : Bspeed;
-112
   }
-113
 }
-114
-​
-115
+
 class Particle
-116
 {
-117
   final static float RAD = 4;
-118
   final static float BOUNCE = -1;
-119
   final static float SPEED_MAX = 2.2;
-120
   final static float DIST_MAX = 50;
-121
   PVector speed = new PVector(random(-SPEED_MAX, SPEED_MAX), random(-SPEED_MAX, SPEED_MAX));
-122
   PVector acc = new PVector(0, 0);
-123
   PVector pos;
-124
   //neighboors contains the particles within DIST_MAX distance, as well as itself
-125
   ArrayList<Particle> neighboors;
-126
   
-127
   Particle()
-128
   {
-129
     pos = new PVector (random(width), random(height));
-130
   }
-131
-​
-132
+
   public void move()
-133
   {    
-134
     pos.add(speed);
-135
     
-136
     acc.mult(0);
-137
     
-138
     if (pos.x < 0)
-139
     {
-140
       pos.x = 0;
-141
       speed.x *= BOUNCE;
-142
     }
-143
     else if (pos.x > width)
-144
     {
-145
       pos.x = width;
-146
       speed.x *= BOUNCE;
-147
     }
-148
     if (pos.y < 0)
-149
     {
-150
       pos.y = 0;
-151
       speed.y *= BOUNCE;
-152
     }
-Settings
-Files
-ModeP5js  Processing.js 
-v1.4.8
-Tabs Show  Hide 
+    else if (pos.y > height)
+    {
+      pos.y = height;
+      speed.y *= BOUNCE;
+    }
+  }
+  
+  public void display()
+  {
+    fill(255, 14);
+    ellipse(pos.x, pos.y, RAD, RAD);
+  }
+}
 
+class Triangle
+{
+  PVector A, B, C; 
 
-
-
-
-
- 
+  Triangle(PVector p1, PVector p2, PVector p3)
+  {
+    A = p1;
+    B = p2;
+    C = p3;
+  }
+  
+  public void display()
+  {
+    vertex(A.x, A.y);
+    vertex(B.x, B.y);
+    vertex(C.x, C.y);
+  }
+}
