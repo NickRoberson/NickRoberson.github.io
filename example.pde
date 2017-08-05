@@ -6,7 +6,8 @@ MyColor myColor = new MyColor();
 
 void setup()
 {
-  size(600, 450, P2D);
+  frameRate(80);
+  size(1200, 800, P2D);
   for (int i = 0; i < NB_PARTICLES; i++)
   {
     parts[i] = new Particle();
@@ -18,7 +19,7 @@ void draw()
   myColor.update();
   noStroke();
   fill(120, 1);
-  background(50);
+  background(255);
   triangles = new ArrayList<Triangle>();
   Particle p1, p2;
 
@@ -116,8 +117,8 @@ class Particle
 {
   final static float RAD = 4;
   final static float BOUNCE = -1;
-  final static float SPEED_MAX = 2.2;
-  final static float DIST_MAX = 50;
+  final static float SPEED_MAX = 1.6;
+  final static float DIST_MAX = 70;
   PVector speed = new PVector(random(-SPEED_MAX, SPEED_MAX), random(-SPEED_MAX, SPEED_MAX));
   PVector acc = new PVector(0, 0);
   PVector pos;

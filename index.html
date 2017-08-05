@@ -5,6 +5,7 @@
     <title>Nicholas A. Roberson</title>
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
 
     <!-- IMPORT BOOTSTRAP -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -13,13 +14,13 @@
 
   </head>
 
-  <body>
+  <body>            
+    <canvas id="bg-canvas" class="canvas-bg" data-processing-sources="example.pde">   
+    </canvas>           
     <div class="jumbotron jumbotron-fluid">
-        <div class="container" style="background:#787878">
-            <canvas data-processing-sources="example.pde"></canvas>
+        <div class="container">
             <h1 class="display-3">Nick Roberson</h1>
             <p class="lead">Grinnell College Computer Science 2018</p>
-            <hr class="my-2">
         </div>
     </div>
     <script type="text/javascript" src="processing.js"></script>
