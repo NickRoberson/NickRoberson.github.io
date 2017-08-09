@@ -91,5 +91,10 @@ body {
 
 .inline {
   margin: 1cm;
-  font-size: 14pt;
+}
+
+.divider {
+  width: 100%;
+  padding: 0cm 1cm 0cm 1cm;
+  border-bottom: solid 1px grey;
 }
