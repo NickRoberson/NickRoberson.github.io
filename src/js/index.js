@@ -3,13 +3,13 @@
 var offset = -30;
 var scrollTime = 1200;
 var animationRunning = true;
-var animationHTML = "";
 
 // init
 run();
 
 // init function
 function run() {
+  $('#contact-info').hide();
 
   // setup click handlers 
   $("#aboutLink").click(function() {
@@ -61,5 +61,7 @@ function run() {
 }
 
 var correctCaptcha = function(response) {
+  $('#recaptcha').hide();
+  $('#contact-info').show();
   console.log(response);
 };
