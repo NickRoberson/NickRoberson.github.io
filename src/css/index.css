@@ -88,3 +88,9 @@ body {
   top: 0px;
   right: 0px;
 }
+
+.inline {
+  font-size: 14pt;
+  width: 100%;
+  align-content: center;
+}
