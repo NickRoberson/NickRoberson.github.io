@@ -3,7 +3,8 @@
 var offset = -30;
 var scrollTime = 1200;
 var animationRunning = true;
-var animationHTML = 
+var animationHTML = "";
+
 // init
 run();
 
@@ -58,3 +59,7 @@ function run() {
     }
   })
 }
+
+var correctCaptcha = function(response) {
+  console.log(response);
+};
