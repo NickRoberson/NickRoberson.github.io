@@ -90,7 +90,6 @@ body {
 }
 
 .inline {
+  margin: 1cm;
   font-size: 14pt;
-  width: 100%;
-  align-content: center;
 }
