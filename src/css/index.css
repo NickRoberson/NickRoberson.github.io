@@ -32,12 +32,12 @@ body {
   font-size: 14pt;
 }
 .header-main {
-    width: 100vw;
-    height: 100vh;
-    text-align: center;
-    padding-top: 20%;
-    margin-bottom: 5cm;
-    font-weight: bold;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  padding-top: 20%;
+  margin-bottom: 5cm;
+  font-weight: bold;
 }
 
 /* css for panels for each section */
@@ -97,4 +97,8 @@ body {
   width: 100%;
   padding: 0cm 1cm 0cm 1cm;
   border-bottom: solid 1px grey;
+}
+
+.fa {
+  font-family: Courier New !important;
 }
