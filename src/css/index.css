@@ -1,0 +1,90 @@
+canvas {
+  width: 100vw;
+  height: 100vh;
+  display: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -9999;
+}
+
+body {
+  font-family: Courier New !important;
+  overflow-x: hidden !important;
+}
+
+/* css for header image */
+.fullscreen {
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -100;
+}
+
+/* css for header text */
+.title {
+  font-size: 36pt;
+  font-weight: bold;
+}
+.sub-title {
+  font-weight: bold;
+  font-size: 14pt;
+}
+.header-main {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    padding-top: 20%;
+    margin-bottom: 5cm;
+    font-weight: bold;
+}
+
+/* css for panels for each section */
+.custom-panel {
+  padding: .5cm .5cm .5cm .5cm;
+  margin: 1cm 3cm 1cm 3cm;
+}
+
+.content {
+  width: auto;
+  background: white;
+  border: 0px solid white;
+  border-radius: .3cm;
+  opacity: .95;
+}
+
+.panel-header {
+  margin-bottom: 1cm;
+}
+
+.work-title {
+  position: relative;
+  left: 0px;
+}
+
+.work-date {
+  position: absolute;
+  right: 0px;
+}
+
+.work {
+  display: inline;
+}
+
+.content-item {
+  margin: 1cm;
+}
+
+.glyphicon {
+  margin-left: 15px;
+  position: absolute;
+}
+
+.disable-button {
+  position: absolute;
+  margin-top:.5cm;
+  margin-right:.5cm;
+  top: 0px;
+  right: 0px;
+}

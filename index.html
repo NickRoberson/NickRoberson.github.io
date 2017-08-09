@@ -5,33 +5,43 @@
     <title>Nicholas A. Roberson</title>
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="src/css/index.css">
+    <link rel="stylesheet" href="src/css/bootstrap.css">
 
     <!-- IMPORT BOOTSTRAP -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+    <!-- reCAPTCHA GOOGLE -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
   </head>
 
   <body>       
+
+    <!-- header optional -->
+    <image class="fullscreen" src="images/bg.jpg">
+    </image>
+
     <!-- header -->
-    <div class="header">
-      <h1 class="title">Nicholas A. Roberson</h1>
-      <p class="lead">Grinnell College Computer Science 2018</p>
-      <!-- links to scroll to items -->
-      <a id="aboutLink">About</a> | 
-      <a id="experienceLink">Experience</a> | 
-      <a id="skillsLink">Skills</a> | 
-      <a id="interestsLink">Interests</a> | 
-      <a id="contactLink">Contact</a>
+    <div class="header-main">
+      <div class="col-md-6"></div>
+      <div class="col-md-6">
+        <h1 class="title">Nicholas Roberson</h1>
+        <p class="sub-title">Grinnell College Computer Science 2018</p>
+        <!-- links to scroll to items -->
+        <a id="aboutLink">About</a> | 
+        <a id="experienceLink">Experience</a> | 
+        <a id="skillsLink">Skills</a> | 
+        <a id="interestsLink">Interests</a> | 
+        <a id="contactLink">Contact</a>
+      </div>
     </div>
 
     <!-- content -->
     <div id="about" class="content custom-panel">
       <h1 class="display-3">About Me</h1>
       <div class="content-item">
-        Something.
       </div>
     </div>
 
@@ -87,11 +97,35 @@
 
     <div id="skills" class="content custom-panel">
       <h1 class="display-3">Skills</h1>
-      <p class="lead"> Lorem Ipsum</p>
+      
+      <!-- item 1 -->
+      <h4>Programming Languages:</h4>
+      <ul>
+        <li><h6>Highly skilled - <small>Java, Android, JavaFX, JavaScript</small></h6></li>
+        <li><h6>Proficient <small>C, Python, SQL, HTML, XML, CSS</small></h6></li>
+      </ul>
+      
+      <!-- item 2 -->
+      <h4>Software/IDEs:</h4>
+      <ul>
+        <li>IntelliJ, Eclipse, NetBeans, Android Studo, PyCharm, Emacs,
+            Java Scene Builder, Atom, Sublime Text, Visual Studio Code.
+        </li>
+      </ul>
+
+      <!-- item 3 -->
+      <h4>General Interests:</h4>
+      <ul>
+        <li>Mobile and Desktop application development</li>
+        <li>Algorithmic design</li>
+        <li>Tech entreprenuership</li>
+      </ul>
+
+      
     </div>
 
     <div id="interests" class="content custom-panel">
-      <h1 class="display-3">Interests</h1>
+      <h1 class="display-3">Extracirricular Interests</h1>
 
       <!-- item 1 -->
       <div class="content-item">
@@ -137,13 +171,31 @@
 
       <!-- item 2 -->
       <div class="content-item">
+        <h4>Swimming & Water Polo</h4>
+        <div class="content-item">
+          Since the age of 6 I have always love swimming, it was not until college that I became involved with
+          water polo. 
+        </div>
+      </div>
+
+      <!-- item 2 -->
+      <div class="content-item">
         <h4>Music</h4>
       </div>
     </div>
 
     <div id="contact" class="content custom-panel">
       <h1 class="display-3">Contact</h1>
-      <p class="lead"> Lorem Ipsum</p>
+      <form>
+        <div class="g-recaptcha" data-sitekey="6LeJOCwUAAAAAHHX6XJhYSzmKibEXf1eieyY5bGG"></div>
+      </form>
+      <!--
+      <div class="inline">
+        <i class="fa fa-github-square" aria-hidden="true"></i>
+        <i class="fa fa-github-square" aria-hidden="true"></i>
+        <i class="fa fa-github-square" aria-hidden="true"></i>
+      </div>
+      -->
     </div>
 
     <!-- background amination -->    
@@ -152,10 +204,10 @@
       </canvas> 
     </div>
 
-    <a id="disable" class="disable-button"> Disable Animation
+    <a id="disable" class="disable-button"> Disable Animations
     </a>
 
-    <script type="text/javascript" src="processing.js"></script>
-    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="src/processing/processing.js"></script>
+    <script type="text/javascript" src="src/js/index.js"></script>
   </body>
 </html>
