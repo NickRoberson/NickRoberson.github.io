@@ -17,10 +17,10 @@
     <script src='https://www.google.com/recaptcha/api.js'></script>
   </head>
 
-  <body>       
+  <body id="body">       
 
     <!-- header optional -->
-    <image class="fullscreen" src="images/bg.jpg">
+    <image class="fullscreen" src="images/background.jpg">
     </image>
 
     <!-- header -->
@@ -30,10 +30,10 @@
         <h1 class="title">Nicholas Roberson</h1>
         <p class="sub-title">Grinnell College Computer Science 2018</p>
         <!-- links to scroll to items -->
-        <a id="aboutLink">About</a> | 
-        <a id="experienceLink">Experience</a> | 
-        <a id="skillsLink">Skills</a> | 
+        <a id="aboutLink">About Me</a> | 
         <a id="interestsLink">Interests</a> | 
+        <a id="projectsLink">Projects</a> | 
+        <a id="resumeLink">Resume</a> | 
         <a id="contactLink">Contact</a>
       </div>
     </div>
@@ -42,130 +42,73 @@
     <div id="about" class="content custom-panel">
       <h1 class="display-3">About Me</h1>
       <div class="content-item">
+        Welcome! <br><br>
+
+        My name is Nick Roberson, and I am a fourth year Computer Science major at 
+        Grinnell College in Iowa. A few months ago, as my senior year was approaching, 
+        I had the idea to create a this site to better advertise myself to people and/or 
+        employers. Here you can find information about where I’m from, what I like to 
+        do, and what I’ve done in the past! Enjoy!
+
       </div>
-    </div>
-
-    <div id="experience" class="content custom-panel">
-      <h1 class="panel-header">Experience</h1>
-      
-      <!-- Work 1 -->
-      <div class="content-item">
-        <div class="work">
-          <h4 class="work-title">Grinnell College Computer Science Department
-            <small> Grinnell, Iowa</small>
-            <small class="work-date"> May 2017 - Current</small>
-          </h4>
-        </div>
-        <ul>
-          <li>Point 1</li>
-          <li>Point 2</li>
-          <li>Point 3</li>
-        </ul>
-      </div>
-
-      <!-- Work 2 -->
-      <div class="content-item">
-        <div class="work">
-          <h4 class="work-title">Grinnell College Application Development
-            <small> Grinnell, Iowa</small>
-            <small class="work-date"> January 2017 - Current</small>
-          </h4>
-        </div>
-        <ul>
-          <li>Point 1</li>
-          <li>Point 2</li>
-          <li>Point 3</li>
-        </ul>
-      </div>
-
-      <!-- Work 3 -->
-      <div class="content-item">
-        <div class="work">
-          <h4 class="work-title">SRI International S.T.A.R. Lab
-            <small> Menlo Park, California</small>
-            <small class="work-date"> May 2016 - August 2016</small>
-          </h4>
-        </div>
-        <ul>
-          <li>Point 1</li>
-          <li>Point 2</li>
-          <li>Point 3</li>
-        </ul>
-      </div>
-
-    </div>
-
-    <div id="skills" class="content custom-panel">
-      <h1 class="display-3">Skills</h1>
-      <div class="content-item">
-        <!-- item 1 -->
-        <h4>Programming Languages:</h4>
-        <ul>
-          <li><h6>Highly skilled - <small>Java, Android, JavaFX, JavaScript</small></h6></li>
-          <li><h6>Proficient <small>C, Python, SQL, HTML, XML, CSS</small></h6></li>
-        </ul>
-        
-        <!-- item 2 -->
-        <h4>Software/IDEs:</h4>
-        <ul>
-          <li>IntelliJ, Eclipse, NetBeans, Android Studo, PyCharm, Emacs,
-              Java Scene Builder, Atom, Sublime Text, Visual Studio Code.
-          </li>
-        </ul>
-
-        <!-- item 3 -->
-        <h4>General Interests:</h4>
-        <ul>
-          <li>Mobile and Desktop application development</li>
-          <li>Algorithmic design</li>
-          <li>Tech entreprenuership</li>
-        </ul>
-      </div>
-    </div>
+    </div>    
 
     <div id="interests" class="content custom-panel">
-      <h1 class="display-3">Extracirricular Interests</h1>
+      <h1 class="display-3">Interests</h1>
 
       <!-- item 1 -->
       <div class="content-item">
         <h4> 
           Film Photography
         </h4>
-        <div id="filmPanel">
-          <div id="carousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
+          <div class="content-item">
+            One of the reasons that I like film so much is that, unlike taking photos 
+            with my iPhone, every single shot requires more thought. The aperture, 
+            focus, shutter speed, and zoom must be adjusted every time to get it just 
+            right. This allows you to alter the color and lighting of every photo. This, 
+            on top of the general feel and look of film photographs, gives each photo I 
+            take an almost nostalgic look, adding an emotional layer to it that may be 
+            lost in digital photographs. <br><br>
 
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-              <div class="item active">
-                <img src="images/img1.jpg" alt="1">
-              </div>
+            I currently have three cameras, a Pentax K1000, Olympus OM10, and Minolta 
+            MAXXUM 7000, and am looking to expand my collection in the future to 
+            different makes and models. <br><br>
 
-              <div class="item">
-                <img src="images/img2.jpg" alt="2">
-              </div>
+            Check out some of my photos right below! <br><br>
+            <div id="filmPanel">
+              <div id="carousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img src="images/img1.jpg" alt="1">
+                  </div>
 
-              <div class="item">
-                <img src="images/img3.jpg" alt="3">
+                  <div class="item">
+                    <img src="images/img2.jpg" alt="2">
+                  </div>
+
+                  <div class="item">
+                    <img src="images/img3.jpg" alt="3">
+                  </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#carousel" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                  <span class="sr-only">Next</span>
+                </a>
               </div>
             </div>
-
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#carousel" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#carousel" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right"></span>
-              <span class="sr-only">Next</span>
-            </a>
           </div>
-        </div>
       </div>
 
       <!-- item 2 -->
@@ -177,9 +120,55 @@
         </div>
       </div>
 
-      <!-- item 2 -->
+      <!-- item 3 -->
       <div class="content-item">
         <h4>Music</h4>
+          <div class="content-item">
+          I really find it hard to hone in on one type of music that interests me. What 
+          I wake up each day and want to listen to can vary more than the weather.  I 
+          have gone from one-day listening to bluegrass, to US Top 50 on the next, to 
+          early 2000’s Australian rap on the day after that. There doesn’t seem to be 
+          any reason to the music I may be interested in on any given day. What I do 
+          know, however, is that I can attribute the foundations of my taste in music to 
+          my dad. Throughout my entire childhood he was constantly introducing me to new 
+          music and expanding my horizons, playing anything from Jazz, to Rock, to Rap. 
+          By the time I was 11, I must have heard it all.  <br><br>
+          
+          Earlier this summer I had the thought to combine my interests in music, art, 
+          and computer science and start a side project. This inspiration took the form 
+          of a <a id="website">website</a> that I am currently developing using the Spotify API and the data 
+          visualization library D3.js. Its purpose is to allow Spotify users to visualize 
+          the music that they listen to as well as explore new music. The visualizations 
+          are done using graphs and charts created using data grabbed from your account 
+          such as top songs, playlists, and artists. I’m a long way from finishing, but 
+          it has been a really enjoyable project to work on and I have learned a lot along 
+          the way. <br><br>
+
+          I’m also really interested in producing music, just for fun, but there are 
+          only so many hours in the day! 
+        </div>
+      </div>
+    </div>
+
+    <div id="projects" class="content custom-panel">
+      <h1 class="display-3">Projects</h1>
+      <div class="content-item">
+        <!-- Spotify User Viz -->
+        <h4>Spotify User Visualization </h4>
+        <div class="content-item">
+        </div>      
+        <!-- Caldron --> 
+        <h4>Caldron: An IDE for Modularly Developing Chemical Reaction Networks</h4>
+        <div class="content-item">
+        </div>
+      </div>
+    </div>
+
+    <div id="resume" class="content custom-panel">
+      <h1 class="display-3">Resume</h1>
+      <div class="content-item">
+        <a id="viewResume">View</a> | 
+        <a id="downloadResume" href="/files/NicholasRobersonResume.pdf" download>Download</a> 
       </div>
     </div>
 
@@ -194,10 +183,10 @@
         <p>I will do my best to respond as soon as I can to any and all communications that come my way!</p>
         <div class="divider"></div>
         <a href="https://github.com/NickRoberson"><i class="fa fa-github-square" aria-hidden="true"> 
-        NickRoberson 
+          NickRoberson 
         </i></a> | 
         <a href="https://www.linkedin.com/in/nicholas-roberson"><i class="fa fa-linkedin" aria-hidden="true"> 
-        nicholas-roberson 
+          nicholas-roberson 
         </i></a> | 
         <i class="fa fa-envelope-o" aria-hidden="true"> 
           roberson@grinnell.edu 

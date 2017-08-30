@@ -88,8 +88,8 @@ void mousePressed()
 class MyColor
 {
   float R, G, B, Rspeed, Gspeed, Bspeed;
-  final static float minSpeed = .7;
-  final static float maxSpeed = 1.5;
+  final static float minSpeed = .5;
+  final static float maxSpeed = 1.1;
   MyColor()
   {
     init();

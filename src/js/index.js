@@ -12,6 +12,13 @@ function run() {
   $('#contact-info').hide();
 
   // setup click handlers 
+  $("#introLink").click(function() {
+    console.log("Navigating to intro tab . . .");
+    $('html, body').animate({
+        scrollTop: $("#intro").offset().top + offset
+    }, scrollTime);
+  });
+
   $("#aboutLink").click(function() {
     console.log("Navigating to about tab . . .");
     $('html, body').animate({
@@ -19,17 +26,10 @@ function run() {
     }, scrollTime);
   });
 
-  $("#experienceLink").click(function() {
-    console.log("Navigating to work tab . . .");
+  $("#resumeLink").click(function() {
+    console.log("Navigating to resume tab . . .");
     $('html, body').animate({
-        scrollTop: $("#experience").offset().top + offset
-    }, scrollTime);
-  });
-
-  $("#skillsLink").click(function() {
-    console.log("Navigating to skills tab . . .");
-    $('html, body').animate({
-        scrollTop: $("#skills").offset().top + offset
+        scrollTop: $("#resume").offset().top + offset
     }, scrollTime);
   });
 
@@ -40,8 +40,15 @@ function run() {
     }, scrollTime);
   });
 
+  $("#projectsLink").click(function() {
+    console.log("Navigating to projects tab . . .");
+    $('html, body').animate({
+        scrollTop: $("#projects").offset().top + offset
+    }, scrollTime);
+  });
+
   $("#contactLink").click(function() {
-    console.log("Navigating to interests tab . . .");
+    console.log("Navigating to contact tab . . .");
     $('html, body').animate({
         scrollTop: $("#contact").offset().top + offset
     }, scrollTime);
@@ -51,13 +58,22 @@ function run() {
     if(animationRunning) {
       $('#bg-canvas').hide();
       $('#disable').text('Enable Animation');
+      $('#body').css("background","#efefef");
       animationRunning = false;
     } else {
       animationRunning = true;
       $('#bg-canvas').show();
       $('#disable').text('Disable Animation');
+      $('#body').css("background","#ffffff");
     }
-  })
+  });
+
+  $("#website").click(function() {
+    console.log("Navigating to projects tab . . .");
+    $('html, body').animate({
+        scrollTop: $("#projects").offset().top + offset
+    }, scrollTime);
+  });
 }
 
 var correctCaptcha = function(response) {
