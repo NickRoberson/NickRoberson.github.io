@@ -94,8 +94,8 @@ body {
 }
 
 .divider {
-  width: 100%;
-  padding: 0cm 1cm 0cm 1cm;
+  width: 80%;
+  margin: auto;
   border-bottom: solid 1px grey;
 }
 
