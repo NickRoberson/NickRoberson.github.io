@@ -19,7 +19,7 @@
 
   <body id="body">       
 
-    <!-- header optional -->
+    <!-- main view image bg -->
     <image class="fullscreen" src="images/background.jpg">
     </image>
 
@@ -54,7 +54,7 @@
     </div>    
 
     <div id="interests" class="content custom-panel">
-      <h1 class="display-3">Interests</h1>
+      <h1 class="display-3">Extracirricular Interests</h1>
 
       <!-- item 1 -->
       <div class="content-item">
@@ -156,10 +156,12 @@
         <!-- Spotify User Viz -->
         <h4>Spotify User Visualization </h4>
         <div class="content-item">
+          Some text . . .
         </div>      
         <!-- Caldron --> 
         <h4>Caldron: An IDE for Modularly Developing Chemical Reaction Networks</h4>
         <div class="content-item">
+          Some text . . .
         </div>
       </div>
     </div>
@@ -167,8 +169,14 @@
     <div id="resume" class="content custom-panel">
       <h1 class="display-3">Resume</h1>
       <div class="content-item">
-        <a id="viewResume">View</a> | 
-        <a id="downloadResume" href="/files/NicholasRobersonResume.pdf" download>Download</a> 
+        You can either 
+        <a id="viewResume" data-toggle="collapse" data-target="#demo">view in page</a> or 
+        <a id="downloadResume" href="files/NicholasRobersonResume.pdf" download>download</a> 
+        my Resume onto your computer.
+        <div id="demo" class="collapse">
+          <object data="files/NicholasRobersonResume.pdf" type="application/pdf" width="100%" height="700px">
+          </object>   
+        </div>
       </div>
     </div>
 
