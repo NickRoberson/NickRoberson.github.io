@@ -117,7 +117,7 @@ class Particle
 {
   final static float RAD = 4;
   final static float BOUNCE = -1;
-  final static float SPEED_MAX = 1.6;
+  final static float SPEED_MAX = 1.1;
   final static float DIST_MAX = 70;
   PVector speed = new PVector(random(-SPEED_MAX, SPEED_MAX), random(-SPEED_MAX, SPEED_MAX));
   PVector acc = new PVector(0, 0);

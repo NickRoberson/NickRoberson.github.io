@@ -42,7 +42,7 @@ body {
 
 /* css for panels for each section */
 .custom-panel {
-  padding: .5cm .5cm .5cm .5cm;
+  padding: .25cm 1cm .5cm 1cm;
   margin: 1cm 3cm 1cm 3cm;
 }
 
@@ -73,7 +73,7 @@ body {
 }
 
 .content-item {
-  margin: 1cm;
+  margin: .75cm;
 }
 
 .glyphicon {
@@ -101,4 +101,8 @@ body {
 
 .fa {
   font-family: Courier New !important;
+}
+
+.icon {
+  margin: 0px 10px 0px 10px;
 }

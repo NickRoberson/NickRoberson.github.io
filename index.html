@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>Nicholas A. Roberson</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="src/css/index.css">
     <link rel="stylesheet" href="src/css/bootstrap.css">
 
@@ -14,7 +13,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!-- reCAPTCHA GOOGLE and Font Awesome Icons -->
-    <script src="https://use.fontawesome.com/406350704e.js"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
   </head>
 
@@ -55,7 +53,7 @@
 
         <br>
         Like I said before, I am a fourth year Computer Science major at Grinnell 
-        College in Iowa, but this wasn’t always the plan. Upon leaving northern 
+        College in Iowa, but this wasn’t always the plan. Upon leaving Northern 
         Virginia to go to the Midwest for college I had no intentions of majoring in 
         Computer Science. In fact, I wanted to do a Music/Physics double major. I 
         had played the trumpet my entire life and had a string of really enjoyable 
@@ -63,11 +61,11 @@
         path for me. I thought I had everything figured out. However, after taking 
         CSC 151 and 161 (the intro sequence at Grinnell) my first year, I realized 
         that I couldn’t have been more wrong. I found myself a new advisor, added 
-        Computer Science as my major, and since then it has taken me to some really
+        Computer Science as my major, and since then my major has taken me to some really
         sweet places. <br><br>
 
         In the summer of 2016, just after my second year, I was lucky enough to intern 
-        at SRI in Menlo Park, CA in their Speech Technology and Research lab. I worked 
+        at SRI in Menlo Park, CA in their Speech Technology and Research lab (S.T.A.R. Lab). I worked 
         on a web based application that would help native speakers of endangered 
         languages aid speech recognition software in learning/recognizing their 
         language. <br><br>
@@ -81,18 +79,18 @@
 
         Finally, this past summer I worked as a research/software-development intern 
         for the Grinnell College Computer Science Department doing research in the 
-        realm of Molecular Computing. Together with the other interns/friends and our advisor, 
+        realm of Molecular Computing. Together with my other interns/friends and our advisor, 
         Titus Klinge, we built the first IDE intended for the modular development of 
         chemical reaction networks (CRNs), <a href="http://www.dna.caltech.edu/Papers/programmability_of_CRNs_preprint2008.pdf">which in 2009 were proven to be Turing 
-        universal </a>. Getting out of my comfort zone and diving into the field of 
-        Molecular Computing was a phenomenal experience lending me new skills and 
-        knowledge. On top of this, I was able to advance my software development 
-        skills by building an IDE! <br><br>
+        universal</a>. Getting out of my comfort zone and diving into the field of 
+        Molecular Computing was a phenomenal experience that lent me new skills and 
+        knowledge. On top of that, I was able to advance my software development 
+        skills by building an entire IDE. <br><br>
         
         If you care to check out my work I have linked an executable file for the 
-        Caldron IDE Alpha version below. Currently we are finalizing Caldron and 
+        Alpha version of Caldron (the IDE) below. Currently we are finalizing Caldron and 
         drafting a paper to submit to <a href="http://www.biostec.org/">BIOSTEC 2018</a> 
-        so we can go and give a talk on our work. 
+        in Funchal, Madeira - Portugal so we can go and give a talk on our work. 
 
       </div>
     </div>    
@@ -107,9 +105,8 @@
       <!-- FILM PHOTOGRAPHY COLLAPSIBLE ITEM  -->
       <div class="content-item">
           <a id="viewFilmPhotography" data-toggle="collapse" data-target="#filmPhotography"> 
-            <h4> Film Photography </h4>
-            <i class="fa fa-caret-down" aria-hidden="true"></i>
-           </a>
+            <h4><span class="icon glyphicon glyphicon-chevron-down" aria-hidden="true"></span>Film Photography</h4>
+          </a>
           <div id="filmPhotography" class="collapse">
             <div class="content-item">
               One of the reasons that I like film so much is that, unlike taking photos 
@@ -165,8 +162,7 @@
       <!-- SWIM AND WATER POLO COLLAPSIBLE ITEM  -->
       <div class="content-item">
         <a id="viewSwimmingAndWaterPolo" data-toggle="collapse" data-target="#swimmingAndWaterPolo"> 
-          <h4>Swimming & Water Polo</h4>
-          <i class="fa fa-caret-down" aria-hidden="true"></i>
+            <h4><span class="icon glyphicon glyphicon-chevron-down" aria-hidden="true"></span>Swimming & Water Polo</h4>
         </a>
         <div id="swimmingAndWaterPolo" class="collapse">
           <div class="content-item">
@@ -179,8 +175,7 @@
       <!-- MUSIC COLLAPSIBLE ITEM  -->
       <div class="content-item">
           <a id="viewMusic" data-toggle="collapse" data-target="#music"> 
-            <h4>Music</h4>
-            <i class="fa fa-caret-down" aria-hidden="true"></i>
+            <h4><span class="icon glyphicon glyphicon-chevron-down" aria-hidden="true"></span>Music</h4>
           </a>
           <div id="music" class="collapse"> 
             <div class="content-item">
@@ -213,16 +208,34 @@
 
     <div id="projects" class="content custom-panel">
       <h1 class="display-3">Projects</h1>
+      
+      <!-- Spotify User Viz -->
       <div class="content-item">
-        <!-- Spotify User Viz -->
-        <h4>Spotify User Visualization </h4>
-        <div class="content-item">
-          Some text . . .
-        </div>      
-        <!-- Caldron --> 
-        <h4>Caldron: An IDE for Modularly Developing Chemical Reaction Networks</h4>
-        <div class="content-item">
-          Some text . . .
+        <a id="viewSpotifyVisualization" data-toggle="collapse" data-target="#viewSpotify"> 
+          <h4>
+            <span class="icon glyphicon glyphicon-chevron-down" aria-hidden="true">
+            </span>Spotify User Visualization
+          </h4>
+        </a>
+        <div id="viewSpotify" class="collapse">
+          <div class="content-item">
+            Some text . . .
+          </div>   
+        </div>
+      </div>   
+      
+      <!-- Caldron --> 
+      <div class="content-item">
+        <a id="caldron" data-toggle="collapse" data-target="#viewCaldron"> 
+          <h4>
+            <span class="icon glyphicon glyphicon-chevron-down" aria-hidden="true">
+            </span>Caldron: An IDE for Modularly Developing Chemical Reaction Networks
+          </h4>
+        </a>
+        <div id="viewCaldron" class="collapse">
+          <div class="content-item">
+            Some text . . .
+          </div>
         </div>
       </div>
     </div>
