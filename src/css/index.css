@@ -73,7 +73,7 @@ body {
 }
 
 .content-item {
-  margin: .75cm;
+  margin: .75cm 0cm .75cm .75cm;
 }
 
 .glyphicon {
