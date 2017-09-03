@@ -96,7 +96,8 @@ body {
 .divider {
   width: 80%;
   margin: auto;
-  border-bottom: solid 1px grey;
+  border-bottom: round 1px grey;
+  margin: 1cm 0cm 1cm 0cm
 }
 
 .fa {
@@ -105,4 +106,13 @@ body {
 
 .icon {
   margin: 0px 10px 0px 10px;
+}
+
+.small-carousel {
+  width: 60vw;
+}
+
+.middle-image {
+  padding: 1cm 1cm 1cm 1cm;
+  margin-bottom: 1cm;
 }

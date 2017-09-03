@@ -98,9 +98,12 @@
     <div id="interests" class="content custom-panel">
       <h1 class="display-3">Extracirricular Interests</h1>
 
-      There are many things that I find myself getting interested in, some academie and 
-      some not, but I had to narrow it down. So here are three of my biggest 
-      extracirricular time sinks. <br>
+      
+      <div class="content-item">
+        There are many things that I find myself getting interested in, some academie and 
+        some not, but I had to narrow it down. So here are three of my biggest 
+        extracirricular time sinks. <br>
+      </div>
 
       <!-- FILM PHOTOGRAPHY COLLAPSIBLE ITEM  -->
       <div class="content-item">
@@ -221,8 +224,11 @@
         </a>
         <div id="viewSpotify" class="collapse">
           <div class="content-item">
-            Some text . . .
-          </div>   
+            A webpage designed to allow Spotify users to explore music visually. 
+            Built using the Spotify API, D3.js, Node.js, Javascript, HTML 5, and Bootstrap/CSS. 
+            <a href="https://github.com/NickRoberson/spotify_user_visualization">Link to GitHub repo</a>.
+            <img class="middle-image" style="margin-top: .5cm;" src="images/spotify1.png" width="100%">
+            </div>
         </div>
       </div>   
       
@@ -234,9 +240,53 @@
             </span>Caldron: An IDE for Modularly Developing Chemical Reaction Networks
           </h4>
         </a>
-        <div id="viewCaldron" class="collapse">
+        <div id="viewCaldron" class="collapse small-carousel">
           <div class="content-item">
-            Some text . . .
+            Over this past summer (2017) my teammates and I built an integrated development environment (IDE) for 
+            modular chemical reaction network (CRNs) development called Caldron. Unlike existing tools that are 
+            simulations tools, Caldron is first to help developers and researchers 
+            develop and program CRNs in Caldron. Caldron supports I/O CRNs, 
+            extension operators, and closed sub-CRNs in addition to common features 
+            found in existing CRN tools. For example, users can divide a CRN into 
+            independent modules, test them separately, and reuse them in other CRNs. 
+            Furthermore, users can mark species as inputs and specify them with common 
+            elementary functions, by drawing a function, or by connecting them to another 
+            CRN. Many commonly used CRNs and extension operators are also included as 
+            libraries in Caldron. <br><br>
+
+            Currently, Caldron is still not ready to be released to the public, as we 
+            are very focused on making Caldron accessible to everyone using any platform
+            (Windows, MacOS, Linux). We believe accessibility is important to lower 
+            the bar of entry to using CRNs as a programming language so that more 
+            students and researchers can develop modular CRNs. Finally, we will polish 
+            Caldron so that it is easy to use and intuitive. <br><br>
+
+            <div id="carousel2" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active"><img src="images/caldron/caldron1.png" alt="1"></div>
+                <div class="item"><img src="images/caldron/caldron2.png" alt="2"></div>
+                <div class="item"><img src="images/caldron/caldron3.png" alt="3"></div>
+                <div class="item"><img src="images/caldron/caldron4.png" alt="4"></div>
+              </div>
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#carousel2" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel2" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
