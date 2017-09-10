@@ -36,7 +36,7 @@ body {
   height: 100vh;
   text-align: center;
   padding-top: 20%;
-  margin-bottom: 5cm;
+  margin-bottom: 3cm;
   font-weight: bold;
 }
 
@@ -95,9 +95,8 @@ body {
 
 .divider {
   width: 80%;
-  margin: auto;
-  border-bottom: round 1px grey;
-  margin: 1cm 0cm 1cm 0cm
+  margin: .3cm auto .3cm auto;
+  border-bottom: solid 1px #696969;
 }
 
 .fa {
