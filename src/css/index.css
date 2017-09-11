@@ -112,8 +112,7 @@ body {
 }
 
 .middle-image {
-  padding: 1cm 1cm 1cm 1cm;
-  margin-bottom: 1cm;
+  margin: .5cm 0cm .5cm 0cm;
 }
 
 .footer {
