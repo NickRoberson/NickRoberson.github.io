@@ -58,7 +58,7 @@ function run() {
     if(animationRunning) {
       $('#bg-canvas').hide();
       $('#disable').text('Enable Animation');
-      $('#body').css("background","#efefef");
+      $('#body').css("background","#ffffff");
       animationRunning = false;
     } else {
       animationRunning = true;
